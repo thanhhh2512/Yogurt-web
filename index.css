@@ -1,0 +1,95 @@
+/** Thiết lập các thuộc tính cơ bản cho toàn bộ các phần tử */
+* {
+  font-family: Arial, Helvetica, sans-serif; /* Font chữ */
+  font-size: 1.2rem; /* Cỡ chữ */
+  background-color: rgb(215, 215, 215); /* Màu nền */
+  text-decoration: none; /* Không gạch chân cho văn bản có liên kết */
+}
+/** Thiết lập trang chính */
+body {
+  margin: 0; /* Xóa khoảng cách đệm giữa phần tử body và đường viền của trình duyệt */
+  width: 1096px; /* Chiều rộng của trang */
+}
+
+/** Thiết lập hình ảnh header */
+header img {
+  display: block; /* Hiển thị hình ảnh dưới dạng khối */
+  width: 1096px; /* Chiều rộng hình ảnh */
+  height: 62px; /* Chiều cao hình ảnh */
+}
+
+/** Thiết lập hình ảnh banner */
+.banner img {
+  width: 1096px; /* Chiều rộng hình ảnh */
+  height: 256px; /* Chiều cao hình ảnh */
+}
+
+/** Thiết lập menu */
+.menu {
+  background-color: #ffccff; /* Màu nền của menu */
+  color: #333; /* Màu chữ của menu */
+  display: block; /* Hiển thị menu dưới dạng khối */
+}
+
+/** Thiết lập thanh công cụ */
+.tool-bar {
+  float: left; /* Canh lề trái */
+  margin: 10px 0 26px 0; /* Khoảng cách đệm trên, dưới và hai bên */
+}
+
+/** Thiết lập thanh tài khoản */
+.account-bar {
+  float: right; /* Canh lề phải */
+  margin: 10px 0 26px 0; /* Khoảng cách đệm trên, dưới và hai bên */
+}
+
+/** Thiết lập các liên kết trong menu */
+.menu a {
+  display: inline-block; /* Hiển thị liên kết dưới dạng khối trong menu */
+  width: 122px; /* Chiều rộng liên kết */
+  padding: 5px 10px; /* Khoảng cách đệm trên và dưới, khoảng cách đệm bên trái và phải */
+  text-align: center; /* Căn giữa văn bản */
+  border: 1px solid gray; /* Đường viền xung quanh liên kết */
+}
+
+/** Thiết lập phần tử h2 và các liên kết trong main */
+main > a,
+main > h2 {
+  display: inline-flex; /* Hiển thị dưới dạng đoạn văn bản và liên kết dưới dạng khối, thay vì khối và khối như mặc định */
+}
+main > a {
+  float: right; /* Hiển thị phần tử 'a' bên phải */
+  margin-top: 10px; /* Khoảng cách giữa phần tử trên và phần tử dưới */
+  font-size: 1rem; /* Kích thước chữ */
+}
+
+.kho-san-pham {
+  display: flex; /* Sử dụng flexbox */
+  width: 100%; /* Chiều rộng của phần tử */
+  justify-content: space-between; /* Canh giữa các phần tử bên trong */
+}
+
+.pic-box {
+  width: 320px; /* Chiều rộng của phần tử */
+  height: 180px; /* Chiều cao của phần tử */
+  border: 1px solid gray; /* Hiển thị viền cho phần tử */
+}
+
+.san-pham {
+  width: 320px; /* Chiều rộng của phần tử */
+  display: inline-block; /* Hiển thị phần tử trên cùng một hàng với các phần tử khác */
+}
+
+.gia {
+  display: block; /* Hiển thị phần tử ở dạng khối */
+  float: right; /* Hiển thị phần tử bên phải */
+  line-height: 32px; /* Chiều cao của dòng chữ */
+  font-weight: 600; /* Độ đậm của chữ */
+}
+footer{
+    font-weight: bold;
+    text-align: center;
+}
+footer p{
+    margin-top: 20px;
+}
